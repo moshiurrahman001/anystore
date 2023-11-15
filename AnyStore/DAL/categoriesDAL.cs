@@ -1,12 +1,8 @@
 ﻿using AnyStore.BLL;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AnyStore.DAL
@@ -32,6 +28,7 @@ namespace AnyStore.DAL
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
                 //Open DAtabase Connection
                 conn.Open();
                 //Adding the value from adapter to Data TAble dt
